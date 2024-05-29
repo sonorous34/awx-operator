@@ -1,0 +1,15 @@
+---
+apiVersion: awx.ansible.com/v1beta1
+kind: AWX
+metadata:
+  name: awx
+spec:
+  admin_user: admin
+  admin_email: admin@k8s.cloud
+  admin_password_secret: aDmin12345678
+  task_privileged: true
+  projects_persistence: true
+  projects_storage_class: nfs-client
+  projects_storage_access_mode: ReadWriteMany
+  projects_storage_size: 10Gi
+  service_type: nodeport

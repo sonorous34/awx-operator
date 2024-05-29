@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: awx-postgres-configuration
+  namespace: awx
+stringData:
+  host: MTkyLjE2OC41Ni4xMDI=
+  port: NTQzMg==
+  database: YXd4
+  username: YXd4
+  password: UGFhczEyMzQh
+  sslmode: prefer
+  target_session_attrs: read-write
+  type: unmanaged
+type: Opaque
